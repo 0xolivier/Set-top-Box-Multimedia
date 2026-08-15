@@ -22,7 +22,7 @@ public :
 	void setname(string_view name);
 	void setpath(string_view pathname);
 
-	void display(ostream& sortie, string_view name, string_view pathname) const;
+	void display(ostream& sortie) const;
 
 };
 	

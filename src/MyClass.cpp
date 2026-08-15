@@ -2,7 +2,9 @@
 
 
 MyClass::MyClass ()
-{}
+{
+cout<<" un nouvel objet multimédia a été crée"<<endl; 
+}
 
 MyClass::MyClass(string_view nom, string_view chemin)
 : name(nom), pathname(chemin)
@@ -17,8 +19,8 @@ string MyClass::getpath() const {return pathname ;}
 void MyClass::setname( string_view name) { this->name = name ;}
 void MyClass::setpath( string_view pathname) {this->pathname = pathname;}
 
-void MyClass::display( ostream& sortie, string_view name, string_view pathname) const {
+void MyClass::display( ostream& sortie) const {
 
-sortie<<"le nom de ce media est : "<< name<<endl;
-sortie<<"le chemin vers ce media est: "<<pathname<<endl;
+sortie<<"le nom de ce media est : "<<getname()<<endl;
+sortie<<"le chemin vers ce media est: "<<getpath()<<endl;
 }
