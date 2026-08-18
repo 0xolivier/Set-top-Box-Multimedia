@@ -17,4 +17,5 @@ public :
         void setlon(double lon);
 
         void displayp(ostream& sortie);
+	void play() const;
 };

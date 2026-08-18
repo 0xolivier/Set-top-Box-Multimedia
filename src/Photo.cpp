@@ -19,3 +19,8 @@ using namespace std;
 	sortie<<"la latitude de la photo est : "<<getlat()<<endl;
 	sortie<<"la longitude de la photo est : "<<getlon()<<endl;
 	}
+	void Photo::play() const{
+
+	string prog = "mpv ";
+	system((prog + getpath() + " &").data());
+	}

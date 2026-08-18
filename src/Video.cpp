@@ -20,4 +20,7 @@ using namespace std;
 	sortie<<"la durée de la vidéo est : "<<getdur()<<endl;
 	}
 
-
+	void Video::play() const{
+	string prog = " mpv";
+	system((prog + getpath() + " &").data());
+	}

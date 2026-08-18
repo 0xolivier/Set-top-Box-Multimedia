@@ -16,5 +16,5 @@ public :
 	void setdur(int durée);
 
 	void affichagev(ostream& sortie) const;
-	
+	void play() const;	
 };
